@@ -92,11 +92,6 @@ p {
   text-align: left;
 }
 
-.list-unordered--inline {
-  display: inline;
-  padding-left: 0;
-}
-
 .list-unordered--inline__item {
   display: inline;
   margin-right: 3vw;
