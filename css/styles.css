@@ -68,66 +68,6 @@ p {
   cursor: pointer;
 }
 
-.btn-primary--anim {
-  width: 400px;
-  height: 50px;
-  transition: all 0.5s;
-  position: relative;
-}
-
-.btn-primary--anim__link {
-  text-align: center;
-  text-decoration: none;
-  font-size: 2em;
-  font-weight: 500;
-  color: var(--white);
-  background-color: var(--base-color);
-  border-radius: 15px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.btn-primary--anim::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.5s;
-  background: var(--base-color);
-  border-radius: 15px;
-  opacity: 0.5;
-}
-
-.btn-primary--anim::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.5s;
-  background: var(--base-color);
-  border-radius: 15px;
-  opacity: 0.5;
-}
-
-.btn-primary--anim:hover::before {
-  transform: rotate(45deg);
-}
-
-.btn-primary--anim:hover::after {
-  transform: rotate(-45deg);
-}
-
 .link--secondary {
   text-decoration: none;
   background-color: var(--white);
