@@ -98,7 +98,7 @@ let projects = [
 
 const content = document.querySelector("#primary-content");
 
-projects.forEach((project) => {
+projects.forEach((project, index) => {
   let projectDiv = document.createElement("div");
   projectDiv.innerHTML = `
     <section class="container-centered">
@@ -127,4 +127,8 @@ projects.forEach((project) => {
     </section>
     `;
   content.appendChild(projectDiv);
+  if (index !== projects.length - 1)
+    content.innerHTML += `
+    <hr class="hr--half" />
+    `;
 });
