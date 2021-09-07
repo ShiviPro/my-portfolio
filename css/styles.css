@@ -5,7 +5,6 @@
 
 /* Global custom properties */
 :root {
-
   /* Color related*/
   --base-color: #0be881;
   --base-light: #51f7aa;
@@ -219,6 +218,25 @@ p {
   margin-bottom: 20px;
 }
 
+.purpose-div {
+  display: inline;
+}
+
+.project-purpose {
+  padding: 5px 10px;
+  border: 1.5px solid var(--black);
+  border-radius: 5px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 300ms, color 300ms;
+}
+
+.project-purpose:hover {
+  background-color: var(--base-dark);
+  color: var(--white);
+  border: 1.5px solid var(--white);
+}
+
 .project-section__name,
 .blog-section__name {
   font-weight: 700;
@@ -349,6 +367,11 @@ hr {
   .normal-section__content,
   .off-white-section__content {
     margin: 10px 10vw;
+  }
+
+  .purpose-div {
+    display: grid;
+    grid-template-columns: min-content;
   }
 
   .footer__main-content {
