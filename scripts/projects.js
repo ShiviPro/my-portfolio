@@ -1,4 +1,4 @@
-let projects = [
+const projects = [
   {
     name: "MEmory-quiz",
     date: "Jun, 2021",
@@ -112,11 +112,11 @@ let projects = [
 const content = document.querySelector("#primary-content");
 
 projects.forEach((project, index) => {
-  let purposesDiv = document.createElement("div");
+  const purposesDiv = document.createElement("div");
   project.purpose.forEach((purpose) => {
     purposesDiv.innerHTML += `<span class="project-purpose">${purpose}</span>&nbsp;`;
   });
-  let projectDiv = document.createElement("div");
+  const projectDiv = document.createElement("div");
   projectDiv.innerHTML = `
     <section class="container-centered">
       <div class="project-section">

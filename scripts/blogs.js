@@ -67,7 +67,7 @@ const blogs = [
 const primaryContent = document.querySelector("#content--primary");
 
 blogs.forEach((blog, index) => {
-  let blogSection = document.createElement("section");
+  const blogSection = document.createElement("section");
   blogSection.classList.add("container-centered");
   blogSection.innerHTML = `
     <div class="blog-section">
